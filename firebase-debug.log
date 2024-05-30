@@ -1,0 +1,36 @@
+[debug] [2024-05-30T14:03:51.396Z] ----------------------------------------------------------------------
+[debug] [2024-05-30T14:03:51.399Z] Command:       /usr/local/bin/firebase /Users/thevladoss/.cache/firebase/tools/lib/node_modules/firebase-tools/lib/bin/firebase deploy
+[debug] [2024-05-30T14:03:51.399Z] CLI Version:   13.8.3
+[debug] [2024-05-30T14:03:51.399Z] Platform:      darwin
+[debug] [2024-05-30T14:03:51.399Z] Node Version:  v18.5.0
+[debug] [2024-05-30T14:03:51.403Z] Time:          Thu May 30 2024 17:03:51 GMT+0300 (Moscow Standard Time)
+[debug] [2024-05-30T14:03:51.404Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2024-05-30T14:03:51.469Z] Object "" in "firebase.json" has unknown property: {"additionalProperty":"flutter"}
+[debug] [2024-05-30T14:03:51.475Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-05-30T14:03:51.475Z] > authorizing via signed-in user (osinvladik1@gmail.com)
+[debug] [2024-05-30T14:03:51.476Z] [iam] checking project cursach-24abd for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2024-05-30T14:03:51.480Z] > refreshing access token with scopes: []
+[debug] [2024-05-30T14:03:51.482Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2024-05-30T14:03:51.483Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2024-05-30T14:03:52.359Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 200
+[debug] [2024-05-30T14:03:52.359Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2024-05-30T14:03:52.403Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/cursach-24abd:testIamPermissions [none]
+[debug] [2024-05-30T14:03:52.403Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/cursach-24abd:testIamPermissions x-goog-quota-user=projects/cursach-24abd
+[debug] [2024-05-30T14:03:52.403Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/cursach-24abd:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2024-05-30T14:03:53.754Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/cursach-24abd:testIamPermissions 200
+[debug] [2024-05-30T14:03:53.754Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/cursach-24abd:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2024-05-30T14:03:53.756Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/cursach-24abd [none]
+[debug] [2024-05-30T14:03:54.884Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/cursach-24abd 200
+[debug] [2024-05-30T14:03:54.884Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/cursach-24abd {"projectId":"cursach-24abd","projectNumber":"1069626521566","displayName":"cursach","name":"projects/cursach-24abd","resources":{"hostingSite":"cursach-24abd"},"state":"ACTIVE","etag":"1_feeebdb9-8d7a-4b7d-8579-88f6624a3f6e"}
+[info] 
+   Thank you for trying our experimental support for Flutter Web on Firebase Hosting.
+   While this integration is maintained by Googlers it is not a supported Firebase product.
+   Issues filed on GitHub will be addressed on a best-effort basis by maintainers and other community members.
+
+   Documentation: https://firebase.google.com/docs/hosting/frameworks/frameworks-overview
+   File a bug: https://github.com/firebase/firebase-tools/issues/new?template=bug_report.md
+   Submit a feature request: https://github.com/firebase/firebase-tools/issues/new?template=feature_request.md
+
+   We'd love to learn from you. Express your interest in helping us shape the future of Firebase Hosting: https://goo.gle/41enW5X
+
