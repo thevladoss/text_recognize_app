@@ -45,4 +45,18 @@ class TextRecognitionService {
       return null;
     }
   }
+
+  void pickFile(Function(html.File) onFilePicked) {
+    html.FileUploadInputElement uploadInput = html.FileUploadInputElement();
+    uploadInput.accept = 'image/*';
+    uploadInput.click();
+
+    uploadInput.onChange.listen((e) {
+      final files = uploadInput.files;
+      if (files != null && files.isNotEmpty) {
+        final file = files[0];
+        onFilePicked(file);
+      }
+    });
+  }
 }
