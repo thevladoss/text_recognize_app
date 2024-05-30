@@ -66,7 +66,7 @@ class _ChatPageState extends State<ChatPage> {
             Uri.parse('https://hand-written-to-text.onrender.com/transform'),
           );
           request.files.add(http.MultipartFile.fromBytes(
-            'file_bytes', // используем правильное название поля
+            'file_bytes',
             bytes,
             filename: file.name,
           ));
