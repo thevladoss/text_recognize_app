@@ -51,6 +51,8 @@ class RightPanel extends StatelessWidget {
       }
       spans.add(
         WidgetSpan(
+          alignment: PlaceholderAlignment.baseline,
+          baseline: TextBaseline.alphabetic,
           child: Tooltip(
             message: error.suggestions.join(', '),
             child: Text(
