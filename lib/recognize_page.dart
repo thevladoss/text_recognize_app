@@ -31,6 +31,14 @@ class _RecognizePageState extends State<RecognizePage> {
   bool _isLoading = false;
   final TextRecognitionService _service = TextRecognitionService();
 
+  @override
+  void initState() {
+    super.initState();
+    WidgetsBinding.instance.addPostFrameCallback((_) {
+      // Любой код инициализации, если потребуется в будущем
+    });
+  }
+
   void _pickFile() async {
     if (_isLoading) return;
 
